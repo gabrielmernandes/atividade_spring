@@ -1,0 +1,27 @@
+@baseUrl = https://opulent-adventure-q5xx74479w939v9-8080.app.github.dev
+###
+GET {{baseUrl}}/tarefas
+
+###
+POST {{baseUrl}}/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Exemplo de tarefa",
+    "concluido": false
+}
+
+###
+GET {{baseUrl}}/tarefas/2
+
+###
+PUT {{baseUrl}}/tarefas/1
+Content-Type: application/json
+
+{
+    "descricao": "Descrição atualizada",
+    "concluido": true
+}
+
+###
+DELETE {{baseUrl}}/tarefas/2
